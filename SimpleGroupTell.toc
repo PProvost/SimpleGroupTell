@@ -1,0 +1,13 @@
+## Interface: 30200
+
+## Title: SimpleGroupTell
+## Notes: Adds a /gr command for whispering your current party. No configuration required.
+## Author: Quaiche
+## Version: @project-version@
+## X-Category: Chat/Communication
+## X-License: Apache 2.0
+
+libs/LibStub.lua
+libs/tekKonfigAboutPanel.lua
+
+SimpleGroupTell.lua

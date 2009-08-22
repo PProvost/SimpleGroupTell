@@ -1,0 +1,8 @@
+h2. Overview
+
+Adds a /gr command for sending whispers to your current group (part/raid/bg/etc). When used interactively
+it will dynamically change the text from /gw to the appropriate tell command. Also can be
+used from macros.
+
+No configuration required, just install and go.
+
