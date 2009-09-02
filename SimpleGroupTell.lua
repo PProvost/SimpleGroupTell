@@ -33,8 +33,8 @@ local function ChatFrameEditBox_OnTextChanged(self, isUserInput, ...)
 	if message then
 		local channel = "/s "
 		if IsInInstance() then channel = "/bg " end
-		if GetNumRaidMembers() > 0 then channel = "/ra " end
 		if GetNumPartyMembers() > 0 then channel = "/p " end
+		if GetNumRaidMembers() > 0 then channel = "/ra " end
 
 		self:SetText(channel..message)
 		ChatEdit_ParseText(self, 0)
@@ -49,8 +49,8 @@ SLASH_SIMPLEGROUPTELL1 = "/gr"
 SlashCmdList.SIMPLEGROUPTELL = function(msg)
 	local channel = "SAY"
 	if IsInInstance() then channel = "BATTLEGROUND" end
-	if GetNumRaidMembers() > 0 then channel = "RAID" end
 	if GetNumPartyMembers() > 0 then channel = "PARTY" end
+	if GetNumRaidMembers() > 0 then channel = "RAID" end
 	SendChatMessage(msg, channel) 
 end
 
