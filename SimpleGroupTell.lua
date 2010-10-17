@@ -24,8 +24,8 @@ function f:ADDON_LOADED(event, addon)
 	self:UnregisterEvent("ADDON_LOADED"); self.ADDON_LOADED = nil
 end
 
--- Pre-Hook the ChatFrameEditBox OnTextChanged script to change a /gr into something else
-local orig = ChatFrameEditBox:GetScript("OnTextChanged")
+-- Pre-Hook the ChatFrame1EditBox OnTextChanged script to change a /gr into something else
+local orig = ChatFrame1EditBox:GetScript("OnTextChanged")
 local function ChatFrameEditBox_OnTextChanged(self, isUserInput, ...)
 	if isUserInput ~= true then return end
 
@@ -42,7 +42,7 @@ local function ChatFrameEditBox_OnTextChanged(self, isUserInput, ...)
 
 	if orig then orig(self, isUserInput, ...) end
 end
-ChatFrameEditBox:SetScript("OnTextChanged", ChatFrameEditBox_OnTextChanged)
+ChatFrame1EditBox:SetScript("OnTextChanged", ChatFrameEditBox_OnTextChanged)
 
 -- Including a proper slash handler as well for use with Macros.
 SLASH_SIMPLEGROUPTELL1 = "/gr"
