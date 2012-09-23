@@ -1,4 +1,4 @@
-## Interface: 40000
+## Interface: 50001
 
 ## Title: SimpleGroupTell
 ## Notes: Adds a /gr command for whispering your current party. No configuration required.
